@@ -1,29 +1,3 @@
-/* ====================================
-Template Name: GenAI
-Description: AI Content Writing & Copywriting HTML5 Landing Page Template
-Template URI: https://themeforest.net/item/genai-ai-based-copywriting-and-content-writing-landing-page-template/45150495
-Author: Marvel Theme
-Author URI: https://themeforest.net/user/marvel_theme
-Version: 1.1
-Published: 1 May 2023
-Last Update: 9 May 2023
-==================================== */
-
-/* Table of contents
-====================================
-1. AOS initialization
-2. Typing text animation
-3. Video popup
-4. Pricing switch
-5. Review carousel
-6. Review rolling carousel
-7. Review rolling carousel reversed
-8. Contact form
-9. Sticky navbar
-
-====================================
-*/
-
 (function () {
 	// 1. AOS initialization
 	AOS.init({
@@ -191,46 +165,6 @@ Last Update: 9 May 2023
 			},
 		},
 	});
-
-	// 8. Contact form
-	const form = document.querySelector("#contact-form");
-
-	if (form) {
-		const formStatus = form.querySelector(".status");
-
-		form.addEventListener("submit", function (e) {
-			e.preventDefault();
-			let formData = new FormData(form);
-
-			let xhr = new XMLHttpRequest();
-			xhr.open("POST", form.action);
-			xhr.onload = function () {
-				if (xhr.status === 200) {
-					formStatus.classList.remove("d-none");
-					formStatus.classList.remove("alert-danger");
-					formStatus.classList.add("alert-success");
-					formStatus.textContent = xhr.responseText;
-					form.reset();
-					setTimeout(() => {
-						formStatus.classList.add("d-none");
-					}, 6000);
-				} else {
-					formStatus.classList.remove("d-none");
-					formStatus.classList.remove("alert-success");
-					formStatus.classList.add("alert-danger");
-					if (xhr.responseText !== "") {
-						formStatus.textContent = xhr.responseText;
-					} else {
-						formStatus.textContent = "Oops! An error occurred and your message could not be sent.";
-					}
-					setTimeout(() => {
-						formStatus.classList.add("d-none");
-					}, 6000);
-				}
-			};
-			xhr.send(formData);
-		});
-	}
 
 	// 9. Sticky navbar
 	const header = document.querySelector(".navbar");
