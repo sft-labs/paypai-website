@@ -80,8 +80,8 @@
                                             data-strings='["Secure", "Reliable"]'>Seamless</span>
                                     </h1>
                                     <a target="_blank" href="https://testnet.paypai.network"
-                                        class="btn btn-lg btn-gradient-1" data-aos="fade-up-sm"
-                                        data-aos-delay="200">Try The Demo Now</a>
+                                        class="btn btn-lg btn-gradient-1" data-aos="fade-up-sm" data-aos-delay="200">Try
+                                        The Demo Now</a>
                                 </div>
                                 <!-- <div data-aos="fade-up-sm" data-aos-delay="300" class="hidden">
                                     <div class="image-with-shape">
@@ -354,23 +354,24 @@
                                                 data-bs-target="#faq-collapseOne" aria-expanded="false"
                                                 aria-controls="faq-collapseOne">
                                                 <span class="icon"></span>
-                                                Sign Up and Log in
+                                                Register and Log In
                                             </button>
                                         </h2>
                                         <div id="faq-collapseOne" class="accordion-collapse collapse show"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                If you don't have a wallet account, you can log in using:
+                                                PayPAI supports registration/login via email or Web3 wallet:
                                                 <ul class="custom-list">
                                                     <li>
-                                                        Google Account – One-click instant access.
+                                                        Email: Register or log in using your email and a verification
+                                                        code. (If you don't receive the code, please check your spam
+                                                        folder or request a new one.)
                                                     </li>
                                                     <li>
-                                                        Email + One-Time Code – A secure and simple login method.
+                                                        Wallet: Connect an existing Web3 wallet to register or log in,
+                                                        e.g., MetaMask.
                                                     </li>
                                                 </ul>
-                                                A wallet address is automatically created upon registration.
-                                                If you already have a wallet, simply connect it to log in.
                                             </div>
                                         </div>
                                     </div>
@@ -381,15 +382,28 @@
                                                 data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo"
                                                 aria-expanded="false" aria-controls="faq-collapseTwo">
                                                 <span class="icon"></span>
-                                                Supported Chains
+                                                Chain, Token and Gas
                                             </button>
                                         </h2>
                                         <div id="faq-collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                Currently supported: Base <span
-                                                    style="font-family: sans-serif;">&amp;</span> BNB Chain. Upcoming:
-                                                Ethereum <span style="font-family: sans-serif;">&amp;</span> Solana.
+                                                The current test version of PayPAI supports the following two test
+                                                networks and default test tokens. You can also manually enter the token
+                                                contract address when making a payment.
+
+                                                <ul class="custom-list">
+                                                    <li>
+                                                        Base Sepolia Testnet: ETH/USDC/USDT
+                                                    </li>
+                                                    <li>
+                                                        Binance Smart Chain Testnet: BNB/USDC/USDT/BUSD
+                                                    </li>
+                                                </ul>
+                                                To perform payment operations, gas fees are required. You can claim test
+                                                tokens via the PayPAI Faucet.
+                                                <br />
+                                                Note: Cooling-off Pay is currently gas-free on the Base Sepolia Testnet.
                                             </div>
                                         </div>
                                     </div>
@@ -400,73 +414,23 @@
                                                 data-bs-toggle="collapse" data-bs-target="#faq-collapseThree"
                                                 aria-expanded="false" aria-controls="faq-collapseThree">
                                                 <span class="icon"></span>
-                                                Supported Payment Tokens
+                                                Function Activation and Quick Commands
                                             </button>
                                         </h2>
                                         <div id="faq-collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
+                                                There are two ways to activate PayPAI functions:
                                                 <ul class="custom-list mb-0">
                                                     <li>
-                                                        Base: USDC, USDT, ETH;
+                                                        <span style="font-weight: bold;">Direct Input:</span>
+                                                        Simply type the desired operation directly in the chat, such as
+                                                        Direct Pay, Cooling-off Pay, or Batch Pay.
                                                     </li>
                                                     <li>
-                                                        BNB Chain: USDC, USDT, BNB;
-                                                    </li>
-                                                </ul>
-                                                More token options are coming soon.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseFour"
-                                                aria-expanded="false" aria-controls="faq-collapseFour">
-                                                <span class="icon"></span>
-                                                Gas Fees
-                                            </button>
-                                        </h2>
-                                        <div id="faq-collapseFour" class="accordion-collapse collapse"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                <ul class="custom-list">
-                                                    <li>
-                                                        Cooling-off Pay: No gas fees.
-                                                    </li>
-                                                    <li>
-                                                        Other Transactions: Require ETH on Base Chain or BNB on BNB
-                                                        Chain for gas fees.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseFive"
-                                                aria-expanded="false" aria-controls="faq-collapseFive">
-                                                <span class="icon"></span>
-                                                Deposit Guide
-                                            </button>
-                                        </h2>
-                                        <div id="faq-collapseFive" class="accordion-collapse collapse"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                New accounts start with a zero balance and require a deposit:
-                                                <ul class="custom-list">
-                                                    <li>
-                                                        Log in and go to Account.
-                                                    </li>
-                                                    <li>
-                                                        Copy your wallet address.
-                                                    </li>
-                                                    <li>
-                                                        Transfer funds from another wallet or exchange (ensure you use
-                                                        the correct chain).
+                                                        <span style="font-weight: bold;">Quick Menu:</span>
+                                                        Enter “/” in the chat input to trigger the quick command menu
+                                                        and choose a function.
                                                     </li>
                                                 </ul>
                                             </div>
